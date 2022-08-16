@@ -1,0 +1,16 @@
+<div class="container">
+  <mat-card class="mat-elevation-z6">
+    <form [formGroup]="form" (submit)="attempt($event)">
+      <h2>¡Welcome Login!</h2>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input matInput type="text" formControlName="email">
+      </mat-form-field>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+      </mat-form-field>
+      <button type="submit" mat-raised-button color="primary">Login</button>
+    </form>
+  </mat-card>
+</div>
