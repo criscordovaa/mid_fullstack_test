@@ -10,7 +10,7 @@ It was attached docker compose tool for running containers to build and deploy l
 - Docker.
 - Docker compose.
 - Bash for execute sh files.
-- Release local ports 8001 and 3000.
+- Release local ports 8001, 3000 and 3307.
 
 ## Project Structure
 In folder /Backend can find all laravel project files.
@@ -62,6 +62,8 @@ For that we need to execute sh files, situated inside ***Backend*** folder, ***p
 5. Execute `sh php-artisan.sh passport:install` for generate passport keys.
 6. Execute `sh permission.sh` this is for prevent permission access denied on storage during apache (www-data) tries to access.
 
-Once all, you can acces to your http://localhost:3000
+Once all, you can acces to your http://localhost:3000 with credentials:
+- email: admin.user@root.com
+- password: secret
 
 ***Enjoy!***
